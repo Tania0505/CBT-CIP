@@ -1,0 +1,145 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#f4f4f4;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.blob {
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle at 60% 40%, #ff3f8b 30%, #ff6f61 70%, #ff4b5c 100%);
+    border-radius: 60% 40% 50% 50% ;
+    transform:rotate(25deg);
+    filter: blur(100px);
+    z-index: -1;
+    opacity: 0.85;
+    animation: float 6s ease-in-out infinite;
+}
+ @keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(25deg);
+
+    }
+
+    50%{
+        transform:translateY(-20px) rotate(25deg);
+    }
+ }
+
+
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #ff3f8b;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+section h2 {
+    margin-top: 0;
+
+    color: #333;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color:#ff3f8b;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color:  #a3e635;
+}
+
+
+#event-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#event-list li {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#event-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#event-list li h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#event-list li p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 1em;
+}
+
+#event-list li p span {
+    font-weight: bold;
+    color: #ff5353;
+}
